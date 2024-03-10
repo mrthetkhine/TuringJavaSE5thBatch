@@ -26,5 +26,6 @@ public class ArithmeticOperator {
         
         a--;//a= a-1;
         System.out.println("A "+a);
+        //System.out.println(" "+ 2**3);
     }
 }
