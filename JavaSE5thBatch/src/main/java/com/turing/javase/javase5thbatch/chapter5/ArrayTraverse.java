@@ -26,7 +26,7 @@ public class ArrayTraverse {
             //total+= i;
         }*/
         System.out.println("Arr ");
-        for(final int i:arr)
+        for(final var i:arr)
         {
             //i = 3;
             System.out.println("I "+i);
