@@ -13,5 +13,10 @@ public class BoxDemo {
         Box box1 = new Box(2,20,13);
         
         System.out.println("Box.volume "+box1.getVolume());
+        
+        Box box2 = new Box();
+        box2 = null;
+        
+        System.gc();
     }
 }

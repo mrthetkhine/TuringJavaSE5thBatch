@@ -11,9 +11,14 @@ package com.turing.javase.javase5thbatch.chapter6;
 public class Box {
     private int width, height,depth;
     
+    public Box()
+    {
+        System.out.println("No argument contructor");
+    }
     public Box(int width,int height, int depth)
     {
-        System.out.println("Constructor");
+        System.out.println("Parameterized Constructor");
+       
         this.width = width;
         this.height = height;
         this.depth = depth;
