@@ -1,0 +1,23 @@
+<html>
+   
+ 
+ <script>
+    function hello()
+    {
+        console.log('Hello');
+    }    
+    let fn = hello;
+    fn();
+
+    function call(fn)
+    {
+        fn();
+    }
+    call(hello);
+    function getFn()
+    {
+        return hello;
+    }
+    getFn()();
+</script>
+</html>
