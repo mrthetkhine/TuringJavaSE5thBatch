@@ -17,13 +17,21 @@ interface Predicate2<T extends Number>
     boolean test(T n);
 }
 public class LambadExpressionDemo {
+    static boolean not(Predicate fun,int number)
+    {
+        return !fun.test(number);
+    }
     
     public static void main(String[] args) {
-        Predicate2<Integer> fun = (n)->n%2==0;
-        System.out.println("Fun isEven "+fun.test(2));
+        Predicate isEven = (n)->n%2==0;
+        System.out.println("Fun isEven "+isEven.test(2));
+        
+        System.out.println("Odd "+ not(isEven,3));
         
         Predicate2<Double> fun2 = (n)->n.doubleValue()%2==0;
         System.out.println("Fun isEven "+fun2.test(2.0));
+        
+        System.out.println("Not "+not((n)->n >0,4));
     }
   
 }
