@@ -6,6 +6,8 @@ package com.turing.javase.javase5thbatch.chapter29;
 
 import com.turing.javase.javase5thbatch.chapter14.Pair;
 import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 /**
@@ -24,7 +26,8 @@ public class MapDemo {
         Stream<Pair<String,Integer>> lowerItems = items.stream()
                                     .map(item->new Pair<String,Integer>(item.toLowerCase(),item.length()))
                                     .filter(pair->pair.getSecond() == 6); 
-        lowerItems.forEach(pair->{
+        List<Pair<String,Integer>> list = lowerItems.collect(Collectors.toList());
+        list.forEach(pair->{
             System.out.println("Str "+pair.getFirst()+" "+pair.getSecond());
         });
     }
