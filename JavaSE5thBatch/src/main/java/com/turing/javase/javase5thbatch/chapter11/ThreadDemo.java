@@ -8,10 +8,10 @@ package com.turing.javase.javase5thbatch.chapter11;
  *
  * @author macbook
  */
-class MyThread extends Thread
+class MyThread2 extends Thread
 {
     String name;
-    MyThread(String name)
+    MyThread2(String name)
     {
         super(name);
         this.name = name;
@@ -36,9 +36,9 @@ public class ThreadDemo {
             e.printStackTrace();
         }
         */
-        MyThread threadOne = new MyThread("One");
-        MyThread threadTwo = new MyThread("Two");
-        MyThread threadThree = new MyThread("Three");
+        MyThread2 threadOne = new MyThread2("One");
+        MyThread2 threadTwo = new MyThread2("Two");
+        MyThread2 threadThree = new MyThread2("Three");
         
         threadOne.setPriority(Thread.MIN_PRIORITY);
         threadThree.setPriority(Thread.MAX_PRIORITY);

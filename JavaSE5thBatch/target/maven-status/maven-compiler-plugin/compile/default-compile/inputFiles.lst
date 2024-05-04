@@ -28,6 +28,7 @@
 /Users/Project/Turing/Java/JavaSE5thBatch/JavaSE5thBatch/src/main/java/com/turing/javase/javase5thbatch/chapter28/SynchronizationProblemWithSemaphore.java
 /Users/Project/Turing/Java/JavaSE5thBatch/JavaSE5thBatch/src/main/java/com/turing/javase/javase5thbatch/chapter28/CallableDemo.java
 /Users/Project/Turing/Java/JavaSE5thBatch/JavaSE5thBatch/src/main/java/com/turing/javase/javase5thbatch/chapter4/EqualityDemo.java
+/Users/Project/Turing/Java/JavaSE5thBatch/JavaSE5thBatch/src/main/java/com/turing/javase/javase5thbatch/chapter19/ArrayDemo.java
 /Users/Project/Turing/Java/JavaSE5thBatch/JavaSE5thBatch/src/main/java/com/turing/javase/javase5thbatch/chapter13/CopyFile.java
 /Users/Project/Turing/Java/JavaSE5thBatch/JavaSE5thBatch/src/main/java/com/turing/javase/javase5thbatch/chapter18/ArrayCopy.java
 /Users/Project/Turing/Java/JavaSE5thBatch/JavaSE5thBatch/src/main/java/com/turing/javase/javase5thbatch/chapter29/IteratorDemo.java
@@ -45,7 +46,9 @@
 /Users/Project/Turing/Java/JavaSE5thBatch/JavaSE5thBatch/src/main/java/com/turing/javase/javase5thbatch/chapter19/SetVsListDemo.java
 /Users/Project/Turing/Java/JavaSE5thBatch/JavaSE5thBatch/src/main/java/com/turing/javase/javase5thbatch/chapter18/Memory.java
 /Users/Project/Turing/Java/JavaSE5thBatch/JavaSE5thBatch/src/main/java/com/turing/javase/javase5thbatch/chapter4/ShortCircuitDemo.java
+/Users/Project/Turing/Java/JavaSE5thBatch/JavaSE5thBatch/src/main/java/com/turing/javase/javase5thbatch/chapter20/OptionalDemo.java
 /Users/Project/Turing/Java/JavaSE5thBatch/JavaSE5thBatch/src/main/java/com/turing/javase/javase5thbatch/chapter9/FlyableDemo.java
+/Users/Project/Turing/Java/JavaSE5thBatch/JavaSE5thBatch/src/main/java/com/turing/javase/javase5thbatch/chapter20/StringTokenizerDemo.java
 /Users/Project/Turing/Java/JavaSE5thBatch/JavaSE5thBatch/src/main/java/com/turing/javase/javase5thbatch/chapter14/Pair.java
 /Users/Project/Turing/Java/JavaSE5thBatch/JavaSE5thBatch/src/main/java/com/turing/javase/javase5thbatch/chapter7/OverloadDemo.java
 /Users/Project/Turing/Java/JavaSE5thBatch/JavaSE5thBatch/src/main/java/com/turing/javase/javase5thbatch/chapter17/StringBufferDemo.java
@@ -53,6 +56,7 @@
 /Users/Project/Turing/Java/JavaSE5thBatch/JavaSE5thBatch/src/main/java/com/turing/javase/javase5thbatch/chapter15/LambadExpressionDemo.java
 /Users/Project/Turing/Java/JavaSE5thBatch/JavaSE5thBatch/src/main/java/com/turing/javase/javase5thbatch/chapter5/TriangleTwo.java
 /Users/Project/Turing/Java/JavaSE5thBatch/JavaSE5thBatch/src/main/java/com/turing/javase/javase5thbatch/chapter12/annotation/NullValidator.java
+/Users/Project/Turing/Java/JavaSE5thBatch/JavaSE5thBatch/src/main/java/com/turing/javase/javase5thbatch/chapter20/BitSetDemo.java
 /Users/Project/Turing/Java/JavaSE5thBatch/JavaSE5thBatch/src/main/java/com/turing/javase/javase5thbatch/chapter4/LogicalUsageDemo.java
 /Users/Project/Turing/Java/JavaSE5thBatch/JavaSE5thBatch/src/main/java/com/turing/javase/javase5thbatch/chapter11/ProducerConsumerProblem.java
 /Users/Project/Turing/Java/JavaSE5thBatch/JavaSE5thBatch/src/main/java/com/turing/javase/javase5thbatch/chapter10/Account.java
@@ -65,6 +69,7 @@
 /Users/Project/Turing/Java/JavaSE5thBatch/JavaSE5thBatch/src/main/java/com/turing/javase/javase5thbatch/chapter14/HierarchyDemo.java
 /Users/Project/Turing/Java/JavaSE5thBatch/JavaSE5thBatch/src/main/java/com/turing/javase/javase5thbatch/chapter13/StaticImport.java
 /Users/Project/Turing/Java/JavaSE5thBatch/JavaSE5thBatch/src/main/java/com/turing/javase/javase5thbatch/chapter28/SynchronizationWithLock.java
+/Users/Project/Turing/Java/JavaSE5thBatch/JavaSE5thBatch/src/main/java/com/turing/javase/javase5thbatch/chapter20/DateDemo.java
 /Users/Project/Turing/Java/JavaSE5thBatch/JavaSE5thBatch/src/main/java/com/turing/javase/javase5thbatch/chapter29/StreamDemo.java
 /Users/Project/Turing/Java/JavaSE5thBatch/JavaSE5thBatch/src/main/java/com/turing/javase/javase5thbatch/chapter28/ExecutorDemo.java
 /Users/Project/Turing/Java/JavaSE5thBatch/JavaSE5thBatch/src/main/java/com/turing/javase/javase5thbatch/chapter19/WhyCollection.java
@@ -85,6 +90,7 @@
 /Users/Project/Turing/Java/JavaSE5thBatch/JavaSE5thBatch/src/main/java/com/turing/javase/javase5thbatch/chapter11/ProducerConsumer.java
 /Users/Project/Turing/Java/JavaSE5thBatch/JavaSE5thBatch/src/main/java/com/turing/javase/javase5thbatch/chapter28/ProducerConsumer.java
 /Users/Project/Turing/Java/JavaSE5thBatch/JavaSE5thBatch/src/main/java/com/turing/javase/javase5thbatch/chapter17/StringDemo.java
+/Users/Project/Turing/Java/JavaSE5thBatch/JavaSE5thBatch/src/main/java/com/turing/javase/javase5thbatch/chapter21/FileInputDemo.java
 /Users/Project/Turing/Java/JavaSE5thBatch/JavaSE5thBatch/src/main/java/com/turing/javase/javase5thbatch/chapter18/ExecuteProcess.java
 /Users/Project/Turing/Java/JavaSE5thBatch/JavaSE5thBatch/src/main/java/com/turing/javase/javase5thbatch/chapter9/ColorDemo.java
 /Users/Project/Turing/Java/JavaSE5thBatch/JavaSE5thBatch/src/main/java/com/turing/javase/javase5thbatch/chapter18/IntegerDemo.java
@@ -93,6 +99,7 @@
 /Users/Project/Turing/Java/JavaSE5thBatch/JavaSE5thBatch/src/main/java/com/turing/javase/javase5thbatch/chapter7/Data.java
 /Users/Project/Turing/Java/JavaSE5thBatch/JavaSE5thBatch/src/main/java/com/turing/javase/javase5thbatch/chapter12/WrapperDemo.java
 /Users/Project/Turing/Java/JavaSE5thBatch/JavaSE5thBatch/src/main/java/com/turing/javase/javase5thbatch/chapter7/Student.java
+/Users/Project/Turing/Java/JavaSE5thBatch/JavaSE5thBatch/src/main/java/com/turing/javase/javase5thbatch/chapter20/CalendarDemo.java
 /Users/Project/Turing/Java/JavaSE5thBatch/JavaSE5thBatch/src/main/java/com/turing/javase/javase5thbatch/Arithmetic.java
 /Users/Project/Turing/Java/JavaSE5thBatch/JavaSE5thBatch/src/main/java/com/turing/javase/javase5thbatch/chapter3/IntegerLiteralDemo.java
 /Users/Project/Turing/Java/JavaSE5thBatch/JavaSE5thBatch/src/main/java/com/turing/javase/javase5thbatch/chapter18/PackageDemo.java
@@ -116,12 +123,16 @@
 /Users/Project/Turing/Java/JavaSE5thBatch/JavaSE5thBatch/src/main/java/com/turing/javase/javase5thbatch/chapter18/MathDemo.java
 /Users/Project/Turing/Java/JavaSE5thBatch/JavaSE5thBatch/src/main/java/com/turing/javase/javase5thbatch/chapter3/VariableDemo.java
 /Users/Project/Turing/Java/JavaSE5thBatch/JavaSE5thBatch/src/main/java/com/turing/javase/javase5thbatch/chapter3/TypeCoercion.java
+/Users/Project/Turing/Java/JavaSE5thBatch/JavaSE5thBatch/src/main/java/com/turing/javase/javase5thbatch/chapter21/BufferedInputDemo.java
+/Users/Project/Turing/Java/JavaSE5thBatch/JavaSE5thBatch/src/main/java/com/turing/javase/javase5thbatch/chapter21/FileOutputStreamDemo.java
 /Users/Project/Turing/Java/JavaSE5thBatch/JavaSE5thBatch/src/main/java/com/turing/javase/javase5thbatch/chapter14/GenericMethod.java
+/Users/Project/Turing/Java/JavaSE5thBatch/JavaSE5thBatch/src/main/java/com/turing/javase/javase5thbatch/chapter20/UniqueIdDemo.java
 /Users/Project/Turing/Java/JavaSE5thBatch/JavaSE5thBatch/src/main/java/com/turing/javase/javase5thbatch/chapter19/MapDemo.java
 /Users/Project/Turing/Java/JavaSE5thBatch/JavaSE5thBatch/src/main/java/com/turing/javase/javase5thbatch/chapter13/TryWithResourceDemo.java
 /Users/Project/Turing/Java/JavaSE5thBatch/JavaSE5thBatch/src/main/java/com/turing/javase/javase5thbatch/chapter29/ReduceDemo.java
 /Users/Project/Turing/Java/JavaSE5thBatch/JavaSE5thBatch/src/main/java/com/turing/javase/javase5thbatch/chapter7/ImmutableDemo.java
 /Users/Project/Turing/Java/JavaSE5thBatch/JavaSE5thBatch/src/main/java/com/turing/javase/javase5thbatch/chapter6/StackDemo.java
+/Users/Project/Turing/Java/JavaSE5thBatch/JavaSE5thBatch/src/main/java/com/turing/javase/javase5thbatch/chapter19/AlgorithmDemo.java
 /Users/Project/Turing/Java/JavaSE5thBatch/JavaSE5thBatch/src/main/java/com/turing/javase/javase5thbatch/chapter9/ExtendInterfaceDemo.java
 /Users/Project/Turing/Java/JavaSE5thBatch/JavaSE5thBatch/src/main/java/com/turing/javase/javase5thbatch/chapter29/StreamUseCaseDemo.java
 /Users/Project/Turing/Java/JavaSE5thBatch/JavaSE5thBatch/src/main/java/com/turing/javase/javase5thbatch/chapter14/WhyGeneric.java
@@ -132,12 +143,14 @@
 /Users/Project/Turing/Java/JavaSE5thBatch/JavaSE5thBatch/src/main/java/com/turing/javase/javase5thbatch/chapter7/Money.java
 /Users/Project/Turing/Java/JavaSE5thBatch/JavaSE5thBatch/src/main/java/com/turing/javase/javase5thbatch/chapter10/ExceptionDemo.java
 /Users/Project/Turing/Java/JavaSE5thBatch/JavaSE5thBatch/src/main/java/com/turing/javase/javase5thbatch/chapter4/BooleanLogicalDemo.java
+/Users/Project/Turing/Java/JavaSE5thBatch/JavaSE5thBatch/src/main/java/com/turing/javase/javase5thbatch/chapter21/FileDemo.java
 /Users/Project/Turing/Java/JavaSE5thBatch/JavaSE5thBatch/src/main/java/com/turing/javase/javase5thbatch/chapter4/NumberToText.java
 /Users/Project/Turing/Java/JavaSE5thBatch/JavaSE5thBatch/src/main/java/com/turing/javase/javase5thbatch/chapter3/ScopeDemo.java
 /Users/Project/Turing/Java/JavaSE5thBatch/JavaSE5thBatch/src/main/java/com/turing/javase/javase5thbatch/chapter15/FunctionalInterfaceDemo.java
 /Users/Project/Turing/Java/JavaSE5thBatch/JavaSE5thBatch/src/main/java/com/turing/javase/javase5thbatch/chapter5/ScopeDemo.java
 /Users/Project/Turing/Java/JavaSE5thBatch/JavaSE5thBatch/src/main/java/com/turing/javase/javase5thbatch/chapter3/ArrayDemo.java
 /Users/Project/Turing/Java/JavaSE5thBatch/JavaSE5thBatch/src/main/java/com/turing/javase/javase5thbatch/chapter19/StackDemo.java
+/Users/Project/Turing/Java/JavaSE5thBatch/JavaSE5thBatch/src/main/java/com/turing/javase/javase5thbatch/chapter20/FormatterDemo.java
 /Users/Project/Turing/Java/JavaSE5thBatch/JavaSE5thBatch/src/main/java/com/turing/javase/javase5thbatch/chapter5/BreakUsecaseDemo.java
 /Users/Project/Turing/Java/JavaSE5thBatch/JavaSE5thBatch/src/main/java/com/turing/javase/javase5thbatch/chapter11/ThreadDemo.java
 /Users/Project/Turing/Java/JavaSE5thBatch/JavaSE5thBatch/src/main/java/com/turing/javase/javase5thbatch/chapter4/RelationalDemo.java
@@ -153,7 +166,9 @@
 /Users/Project/Turing/Java/JavaSE5thBatch/JavaSE5thBatch/src/main/java/com/turing/javase/javase5thbatch/chapter12/annotation/NotNull.java
 /Users/Project/Turing/Java/JavaSE5thBatch/JavaSE5thBatch/src/main/java/com/turing/javase/javase5thbatch/chapter28/ForkJoinDemo.java
 /Users/Project/Turing/Java/JavaSE5thBatch/JavaSE5thBatch/src/main/java/com/turing/javase/javase5thbatch/chapter12/annotation/Human.java
+/Users/Project/Turing/Java/JavaSE5thBatch/JavaSE5thBatch/src/main/java/com/turing/javase/javase5thbatch/chapter21/FileNameFilterDemo.java
 /Users/Project/Turing/Java/JavaSE5thBatch/JavaSE5thBatch/src/main/java/com/turing/javase/javase5thbatch/chapter19/SetDemo.java
+/Users/Project/Turing/Java/JavaSE5thBatch/JavaSE5thBatch/src/main/java/com/turing/javase/javase5thbatch/chapter20/RandomDemo.java
 /Users/Project/Turing/Java/JavaSE5thBatch/JavaSE5thBatch/src/main/java/com/turing/javase/javase5thbatch/JavaSE5thBatch.java
 /Users/Project/Turing/Java/JavaSE5thBatch/JavaSE5thBatch/src/main/java/com/turing/javase/javase5thbatch/chapter14/GStack.java
 /Users/Project/Turing/Java/JavaSE5thBatch/JavaSE5thBatch/src/main/java/com/turing/javase/javase5thbatch/chapter9/InteraceDemo.java
@@ -166,6 +181,7 @@
 /Users/Project/Turing/Java/JavaSE5thBatch/JavaSE5thBatch/src/main/java/com/turing/javase/javase5thbatch/chapter17/StringAPI.java
 /Users/Project/Turing/Java/JavaSE5thBatch/JavaSE5thBatch/src/main/java/com/turing/javase/javase5thbatch/chapter5/WhileDemo.java
 /Users/Project/Turing/Java/JavaSE5thBatch/JavaSE5thBatch/src/main/java/com/turing/javase/javase5thbatch/chapter4/LogicalUseCaseTwoDemo.java
+/Users/Project/Turing/Java/JavaSE5thBatch/JavaSE5thBatch/src/main/java/com/turing/javase/javase5thbatch/chapter20/TimerDemo.java
 /Users/Project/Turing/Java/JavaSE5thBatch/JavaSE5thBatch/src/main/java/com/turing/javase/javase5thbatch/chapter13/OverloadConDemo.java
 /Users/Project/Turing/Java/JavaSE5thBatch/JavaSE5thBatch/src/main/java/com/turing/javase/javase5thbatch/chapter5/ArrayTraverse.java
 /Users/Project/Turing/Java/JavaSE5thBatch/JavaSE5thBatch/src/main/java/com/turing/javase/javase5thbatch/chapter8/PolymorphismDemo.java
