@@ -65,8 +65,6 @@ public class TableDemo extends javax.swing.JFrame {
         btnClear = new javax.swing.JButton();
         txtQty = new javax.swing.JFormattedTextField();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-
         tblItem.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
