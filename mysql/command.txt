@@ -1,0 +1,38 @@
+mysql --host=localhost --user=root --password=password javaee5th
+
+show databases;
+
+use database_name;
+
+show tables;
+
+create database javase5th;
+
+//drop database javase5th;
+
+CREATE TABLE `javase5th`.`movie` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `name` VARCHAR(255) NULL,
+  `gender` VARCHAR(1) NULL,
+  `birthday` DATETIME NULL,
+  PRIMARY KEY (`id`));
+
+INSERT INTO movie(title,genre,year)
+VALUES ('Titanic','Drama',1997);
+
+INSERT INTO javase5th.actor
+SELECT * FROM javase4th_tutorial.actor;
+
+SELECT id,title,now() FROM javase5th.movie;
+
+SELECT YEAR(CURRENT_TIMESTAMP) - YEAR(birthday) - (RIGHT(CURRENT_TIMESTAMP, 5) < RIGHT(birthday, 5)) as age 
+FROM actor;
+
+SELECT * FROM javase5th.movie
+WHERE genre='Sci-Fi';
+
+SELECT * FROM javase5th.movie
+WHERE genre='Sci-Fi' AND year>2010;
+
+SELECT id,title as name,genre,year as release_date FROM javase5th.movie
+WHERE genre='Sci-Fi' AND year>2010;
