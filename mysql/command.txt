@@ -36,3 +36,111 @@ WHERE genre='Sci-Fi' AND year>2010;
 
 SELECT id,title as name,genre,year as release_date FROM javase5th.movie
 WHERE genre='Sci-Fi' AND year>2010;
+
+SELECT * FROM actor,movie;
+
+SELECT actor.id,actor.name, movie.id,movie.title 
+FROM actor,movie;
+
+SELECT actor.id,actor.name, movie.id as movie_id,movie.title FROM actor,movie
+WHERE movie.id>2;
+
+SELECT actor.id,actor.name, movie.id as movie_id,movie.title FROM actor,movie
+WHERE movie.id=2 OR movie.id=4;
+
+SELECT actor.id,actor.name, movie.id as movie_id,movie.title FROM actor,movie
+WHERE movie.id <>4;
+
+SELECT * FROM movie
+ORDER BY year;
+
+SELECT * FROM movie
+ORDER BY year DESC;
+
+SELECT genre,count(id) 
+FROM javase5th.movie
+GROUP BY genre;
+
+SELECT genre,count(id) 
+FROM javase5th.movie
+GROUP BY genre
+HAVING count(id)>2;
+
+SELECT genre,count(id) 
+FROM javase5th.movie
+WHERE year >2000
+GROUP BY genre
+HAVING count(id)>2;
+
+SELECT movie_id
+FROM javase5th.rating
+GROUP BY movie_id
+HAVING COUNT(movie_id)>2
+
+SELECT movie_id,AVG(rating)
+FROM javase5th.rating
+GROUP BY movie_id
+
+SELECT movie_id,AVG(rating)
+FROM javase5th.rating
+GROUP BY movie_id
+HAVING AVG(rating)>3
+
+SELECT DISTINCT(genre) 
+FROM javase5th.movie;
+
+SELECT * FROM movie,movie_actor,actor
+WHERE movie.id=1
+AND movie_actor.movie_id = movie.id
+AND movie_actor.actor_id= actor.id;
+
+SELECT * FROM movie,movie_actor,actor
+WHERE movie_actor.movie_id = movie.id
+AND movie_actor.actor_id= actor.id;
+
+SELECT movie.*,actor.* FROM movie,movie_actor,actor
+WHERE movie_actor.movie_id = movie.id
+AND movie_actor.actor_id= actor.id;
+
+SELECT * FROM movie
+INNER JOIN movie_actor
+ON movie.id= movie_actor.movie_id
+
+SELECT * FROM movie
+LEFT JOIN movie_actor
+ON movie.id= movie_actor.movie_id;
+
+SELECT * FROM movie_actor
+RIGHT JOIN movie
+ON movie.id= movie_actor.movie_id;
+
+SELECT * FROM movie
+CROSS JOIN movie_actor
+ON movie.id= movie_actor.movie_id
+
+SELECT * FROM javase5th.movie
+LIMIT 5,5;
+
+SELECT * FROM javase5th.movie
+LIMIT 0,3; ->row
+
+SELECT * FROM javase5th.movie
+LIMIT 3,3;->page 1
+
+SELECT * FROM javase5th.movie
+LIMIT 6,3;->page 2, offest = page * size
+
+SELECT * FROM movie_actor WHERE movie_actor.movie_id
+IN(
+SELECT id 
+FROM movie 
+WHERE movie.id=1)
+
+
+UPDATE movie 
+SET title="Some movie",
+genre="Crime"
+WHERE id = 7;
+
+DELETE FROM rating
+WHERE id=9;
