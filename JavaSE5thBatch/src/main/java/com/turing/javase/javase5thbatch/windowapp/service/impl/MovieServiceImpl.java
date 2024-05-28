@@ -31,4 +31,14 @@ public class MovieServiceImpl implements MovieService{
     public Movie saveMovie(Movie movie) {
         return this.dao.saveMovie(movie);
     }
+
+    @Override
+    public Movie updateMovie(Movie movie) {
+        return this.dao.updateMovie(movie);
+    }
+
+    @Override
+    public void deleteMovieById(Long movieId) {
+        this.dao.deleteMovieById(movieId);
+    }
 }

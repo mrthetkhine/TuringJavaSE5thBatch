@@ -14,4 +14,6 @@ import java.util.List;
 public interface MovieService {
     List<Movie> getAllMovie();
     Movie saveMovie(Movie movie);
+    Movie updateMovie(Movie movie);
+    void deleteMovieById(Long movieId);
 }

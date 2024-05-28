@@ -8,6 +8,7 @@ import com.turing.javase.javase5thbatch.chapter9.jdbc.model.Movie;
 import java.awt.ComponentOrientation;
 import java.util.ArrayList;
 import java.util.List;
+import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
 /**
@@ -22,6 +23,10 @@ public class MovieForm extends javax.swing.JFrame {
     public MovieForm() {
         initComponents();
     }
+    int editMovieId ;
+    int editRow;
+    
+    boolean editMode = true;
     List<Movie> movies =new ArrayList<Movie>();
     /**
      * This method is called from within the constructor to initialize the form.
@@ -40,7 +45,10 @@ public class MovieForm extends javax.swing.JFrame {
         txtGenre = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
         txtYear = new javax.swing.JTextField();
-        btnSave = new javax.swing.JButton();
+        btnNewSave = new javax.swing.JButton();
+        btnEdit = new javax.swing.JButton();
+        btnUpdate = new javax.swing.JButton();
+        btnDelete = new javax.swing.JButton();
 
         setTitle("Movie Form");
 
@@ -60,10 +68,32 @@ public class MovieForm extends javax.swing.JFrame {
 
         jLabel3.setText("Year");
 
-        btnSave.setText("Save");
-        btnSave.addActionListener(new java.awt.event.ActionListener() {
+        btnNewSave.setText("Save");
+        btnNewSave.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnSaveActionPerformed(evt);
+                btnNewSaveActionPerformed(evt);
+            }
+        });
+
+        btnEdit.setText("Edit");
+        btnEdit.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnEditActionPerformed(evt);
+            }
+        });
+
+        btnUpdate.setText("Update");
+        btnUpdate.setEnabled(false);
+        btnUpdate.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnUpdateActionPerformed(evt);
+            }
+        });
+
+        btnDelete.setText("Delete");
+        btnDelete.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnDeleteActionPerformed(evt);
             }
         });
 
@@ -75,7 +105,11 @@ public class MovieForm extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 833, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 833, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(btnEdit)
+                            .addComponent(btnDelete)))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(25, 25, 25)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -84,12 +118,15 @@ public class MovieForm extends javax.swing.JFrame {
                             .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(btnSave)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(btnNewSave)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(btnUpdate))
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                 .addComponent(txtTitle)
                                 .addComponent(txtGenre)
                                 .addComponent(txtYear, javax.swing.GroupLayout.DEFAULT_SIZE, 324, Short.MAX_VALUE)))))
-                .addContainerGap(198, Short.MAX_VALUE))
+                .addContainerGap(114, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -107,9 +144,16 @@ public class MovieForm extends javax.swing.JFrame {
                     .addComponent(jLabel3)
                     .addComponent(txtYear, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addComponent(btnSave)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnNewSave)
+                    .addComponent(btnUpdate))
                 .addGap(50, 50, 50)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(btnEdit)
+                        .addGap(18, 18, 18)
+                        .addComponent(btnDelete)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -132,12 +176,80 @@ public class MovieForm extends javax.swing.JFrame {
         this.txtGenre.setText("");
         this.txtYear.setText("");
     }
-    private void btnSaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSaveActionPerformed
+    private void btnNewSaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNewSaveActionPerformed
         // TODO add your handling code here:
         this.saveMovie();
         this.clearMovieForm();
-    }//GEN-LAST:event_btnSaveActionPerformed
+    }//GEN-LAST:event_btnNewSaveActionPerformed
 
+    private void btnEditActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEditActionPerformed
+        // TODO add your handling code here:
+        this.editBtnClick();
+        
+    }//GEN-LAST:event_btnEditActionPerformed
+
+    private void btnUpdateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUpdateActionPerformed
+        // TODO add your handling code here:
+        this.updateMovie();
+        this.clearMovieForm();
+        this.btnUpdate.setEnabled(false);
+    }//GEN-LAST:event_btnUpdateActionPerformed
+
+    private void btnDeleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDeleteActionPerformed
+        // TODO add your handling code here:
+        this.deleteMovie();
+    }//GEN-LAST:event_btnDeleteActionPerformed
+    public void deleteMovie()
+    {
+        int row = this.tblMovie.getSelectedRow();
+        if(row != -1)
+        {
+         
+            if( JOptionPane.showConfirmDialog(null, "Are you sure you want to delete", "Delete", JOptionPane.OK_CANCEL_OPTION) == JOptionPane.OK_OPTION)
+            {
+                int id = Integer.parseInt(this.tblMovie.getValueAt(row, 0).toString());
+                System.out.println("Movie delete id "+id);
+                App.getInstance().getMovieService().deleteMovieById((long)id);
+                DefaultTableModel model = (DefaultTableModel)this.tblMovie.getModel();
+                model.removeRow(row);
+            }
+        }
+    }
+    public void updateMovie()
+    {
+        Movie movie = new Movie();
+        movie.setId(Long.valueOf(this.editMovieId));
+        movie.setGenre(this.txtGenre.getText());
+        movie.setTitle(this.txtTitle.getText());
+        movie.setYear(Integer.parseInt(this.txtYear.getText()));
+        App.getInstance().getMovieService().updateMovie(movie);
+        
+        //this.loadMovieData();
+        DefaultTableModel model = (DefaultTableModel)this.tblMovie.getModel();
+        model.setValueAt(movie.getTitle(),this.editRow, 1 );
+        model.setValueAt(movie.getGenre(),this.editRow, 2 );
+        model.setValueAt(movie.getYear(),this.editRow, 3 );
+    }
+    void editBtnClick()
+    {
+        int row =this.tblMovie.getSelectedRow();
+        if(row !=-1)
+        {
+            this.editRow = row;
+            int id = Integer.parseInt(this.tblMovie.getValueAt(row, 0).toString());
+            String title = this.tblMovie.getValueAt(row,1).toString();
+            String genre = this.tblMovie.getValueAt(row, 2).toString();
+            String year = this.tblMovie.getValueAt(row, 3).toString();
+
+            this.editMovieId = id;
+            this.txtTitle.setText(title);
+            this.txtGenre.setText(genre);
+            this.txtYear.setText(year);
+            this.btnUpdate.setEnabled(true);
+            
+        }
+        
+    }
     void addMovieToTable(Movie movie)
     {
         DefaultTableModel model = (DefaultTableModel)this.tblMovie.getModel();
@@ -205,7 +317,10 @@ public class MovieForm extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnSave;
+    private javax.swing.JButton btnDelete;
+    private javax.swing.JButton btnEdit;
+    private javax.swing.JButton btnNewSave;
+    private javax.swing.JButton btnUpdate;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

@@ -84,5 +84,50 @@ public class MovieDaoImpl extends DAO implements MovieDao{
         }
         return movie;
     }
+
+    @Override
+    public Movie updateMovie(Movie movie) {
+        int row=0;
+        String sql = "UPDATE movie "+
+                      "SET title=?,"+
+                        " genre=?,"+
+                       " year=? "+
+                       " WHERE ID=?;";
+        try(PreparedStatement st = this.conn.prepareStatement(sql))
+        {
+            st.setString(1,movie.getTitle());
+            st.setString(2,movie.getGenre());
+            st.setInt(3, movie.getYear());
+            st.setLong(4, movie.getId());
+            
+            System.out.println("SQL "+sql);
+            row = st.executeUpdate();
+            
+        }
+        catch(Exception e)
+        {
+            e.printStackTrace();
+        }
+        return movie;
+    }
+
+    @Override
+    public void deleteMovieById(Long id) {
+        String sql = "DELETE FROM movie "+
+                       " WHERE ID=?;";
+        try(PreparedStatement st = this.conn.prepareStatement(sql))
+        {
+            st.setLong(1,id);
+           
+            System.out.println("SQL "+sql);
+            st.executeUpdate();
+            
+        }
+        catch(Exception e)
+        {
+            e.printStackTrace();
+        }
+       
+    }
     
 }

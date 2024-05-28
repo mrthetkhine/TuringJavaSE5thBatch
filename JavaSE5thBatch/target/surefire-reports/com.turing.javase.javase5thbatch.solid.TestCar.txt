@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: com.turing.javase.javase5thbatch.solid.TestCar
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 1.508 sec <<< FAILURE!
+com.turing.javase.javase5thbatch.solid.TestCar.testCarStart()  Time elapsed: 1.508 sec  <<< FAILURE!
+Wanted but not invoked:
+engine.start();
+-> at com.turing.javase.javase5thbatch.principle.di.Engine.start(Engine.java:16)
+Actually, there were zero interactions with this mock.
+	at com.turing.javase.javase5thbatch.principle.di.Engine.start(Engine.java:16)
+	at com.turing.javase.javase5thbatch.solid.TestCar.testCarStart(TestCar.java:28)
+
