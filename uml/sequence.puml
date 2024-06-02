@@ -1,0 +1,10 @@
+@startuml
+User -> BankMobile: TopUP Request
+BankMobile -> BankBackend: Toup request
+BankBackend-> BankCoreBanking: debit
+BankBackend->Telco: topup
+Bob --> Alice: Authentication Response
+
+Alice -> Bob: Another authentication Request
+Alice <-- Bob: Another authentication Response
+@enduml
